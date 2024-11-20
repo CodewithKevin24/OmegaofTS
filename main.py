@@ -20,7 +20,7 @@ MONGO_URI = os.environ.get('MONGO_URI')
 
 # Initialize MongoDB client with SSL configuration
 client = MongoClient(MONGO_URI, server_api=server_api.ServerApi('1'), tlsCAFile=certifi.where())
-db = client['Ommmeegg']
+db = client['OmegaofTS']
 users_collection = db['Users']
 
 # Ensure MongoDB connection
